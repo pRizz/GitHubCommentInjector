@@ -4,7 +4,6 @@
   "short_name": "GHCI",
   "description": "Injects a button with custom text into the toolbar for GitHub pull requests. When the button is clicked, your predefined comment is posted.",
   "version": "1.0",
-  "default_locale": "en",
   "browser_action": {
     "default_popup": "popup/index.html"
   },
@@ -14,7 +13,7 @@
   "content_scripts": [
     {
       "matches": [
-        "*://github.com/*",
+        "*://github.com/*"
       ],
       "js": ["content.js"],
       "run_at": "document_end"
