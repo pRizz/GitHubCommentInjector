@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="commentInjectorApp">
+  <head>
+    <script src="js/angular.min.js"></script>
+    <script src="js/popup.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+  </head>
+  <body class="panel-body" style="width: 350px">
+    <h4>GitHub Comment Injector</h2>
+    <div ng-controller="CommentListController as commentListController">
+      <ul class="list-group">
+        <li ng-repeat="comment in commentListController.comments" class="list-group-item">
+            <span>{{comment.text}}</span>
+            <span class="pull-right">
+              <span class="btn btn-danger btn-xs" ng-click="commentListController.delete(comment)">
+                  <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+              </span>
+            </span>
+        </li>
+      </ul>
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Comment Text Here" ng-model="commentListController.commentText">
+        <span class="input-group-btn">
+          <button class="btn btn-primary" type="button" ng-click="commentListController.addComment()">Add</button>
+        </span>
+      </div>
+    </div>
+  </body>
+</html>
