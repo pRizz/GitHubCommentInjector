@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "GitHub Comment Injector",
   "short_name": "GHCI",
-  "description": "Injects a button with custom text into the toolbar for GitHub pull requests. When the button is clicked, your predefined comment is posted.",
+  "description": "Injects a buttons with custom, predefined text into the toolbar for GitHub pull requests.",
   "version": "1.0",
   "browser_action": {
     "default_popup": "popup/index.html"
