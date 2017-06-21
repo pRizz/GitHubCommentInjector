@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
-  "name": "GitHub Comment Injector",
-  "short_name": "GHCI",
-  "description": "Injects comment buttons with custom, predefined text into the GitHub pull request comment bar.",
+  "name": "GitHub One Click Comment",
+  "short_name": "GHOCC",
+  "description": "Injects comment buttons with custom, predefined text into the GitHub comment bar.",
   "version": "1.0",
   "browser_action": {
     "default_popup": "popup/index.html"
