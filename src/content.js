@@ -5,7 +5,12 @@ const commentsKey = "settings.commentsKey";
 
 chrome.storage.sync.get(commentsKey, function(storage){
   if (!storage) { return }
-  insertCommentButtons(storage[commentsKey]);
+    
+  function onLoad () {
+    insertCommentButtons(storage[commentsKey]);
+  }
+  
+  document.addEventListener('DOMContentLoaded', onLoad, false);
 });
 
 /// comments: [String]
